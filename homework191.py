@@ -13,7 +13,7 @@ class MyServer(BaseHTTPRequestHandler):
         return  html_content
 
     """
-        Специальный класс, который отвечает за
+        Специальный класс, который отвечает за 
         обработку входящих запросов от клиентов
     """
 
@@ -25,7 +25,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_response(200)  # Отправка кода ответа
         self.send_header("Content-type", "text/html")  # Отправка типа данных, который будет передаваться
         self.end_headers()  # Завершение формирования заголовков ответа
-        self.wfile.write(bytes(page_content, "utf-8"))  # Тело ответа
+        self.wfile.write(bytes(page_content, "utf-8"))  # Тело  ответа
 
 
 if __name__ == "__main__":
